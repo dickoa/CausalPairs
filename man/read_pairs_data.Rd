@@ -1,6 +1,6 @@
 \name{read_pairs_data}
 \alias{read_pairs_data}
-\title{Read pairs data given the pathg}
+\title{Read pairs data given the path}
 \usage{
   read_pairs_data(file)
 }
@@ -8,7 +8,7 @@
   \item{file}{}
 }
 \description{
-  Read pairs data given the pathg
+  Read pairs data given the path
 }
 \author{
   ahmadou

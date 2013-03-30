@@ -3,8 +3,8 @@ Type: Package
 Title: R helper functions for the Causality Effect Pairs challenge in Kaggle
 Version: 0.1
 Date: 2013-03-27
-Depends : R (>= 2.15.0)
-Imports : 
+Depends : R (>= 2.15.0), data.table (>= 1.8.8)
+Imports : data.table
 Author: Dicko Ahmadou
 Maintainer: Dicko Ahmadou <dicko.ahmadou@gmail.com>
 Description: Helper functions for R user to read the data, build classifier and
