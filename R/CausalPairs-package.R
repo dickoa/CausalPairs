@@ -2,6 +2,7 @@
 ##'
 ##' @docType package
 ##' @name CausalPairs
+##' @import data.table
 ##' @aliases CausalPairs CausalPairs-package
 ##' @author Ahmadou Dicko \email{dicko.ahmadou.gmail}
 ##' @keywords package
