@@ -2,7 +2,7 @@ Cause Effect Pairs R package
 ============================
 
 
-This repo contains some sample code in R to read pairs data for the [Cause Effect Pairs Challenge](https://www.kaggle.com/c/cause-effect-pairs), a machine learning challenged hosted by [Kaggle](https://www.kaggle.com) and organized by [ChaLearn](http://www.chalearn.org/).
+This repo contains some sample code in R to read pairs data (CEdata_text) for the [Cause Effect Pairs Challenge](https://www.kaggle.com/c/cause-effect-pairs), a machine learning challenged hosted by [Kaggle](https://www.kaggle.com) and organized by [ChaLearn](http://www.chalearn.org/).
 
 
 # Install the package
