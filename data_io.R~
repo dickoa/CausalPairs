@@ -1,0 +1,61 @@
+require(RJSONIO)
+
+
+get_paths <- function() as.list(fromJSON("Settings.json"))
+
+read_train_pairs <- function(...) {
+    train_path <- get_paths()[["train_pairs_path"]]
+    read.csv(train_path, ...)
+}
+
+read_train_target <- function(...) {
+    path <- get_paths()[["train_target_path"]]
+    df <- read.csv(path)
+    names(df) <- c("Target", "Details")
+    df
+}
+
+read_train_info <- function(...) {
+    path <- get_paths()[["train_info_path"]]
+    read.csv(path, ...)
+}
+
+read_valid_pairs <- function(...) {
+    valid_path <- get_paths()[["valid_pairs_path"]]
+    read.csv(valid_path, ...)
+}
+
+
+read_valid_info <- function(...) {
+    path <- get_paths()[["valid_info_path"]]
+    read.csv(valid_path, ...)
+}
+
+read_solution <- function(...) {
+    solution_path <- get_paths()[["solution_path"]]
+    read.csv(solution_path, ...)
+}
+
+save_model <- function(model) {
+    out_path <- get_paths()[["model_path"]]
+    saveRDS(model, out_path)
+}
+
+load_model <- function() {
+    in_path <- get_paths()[["model_path"]]
+    readRDS(in_path)
+}
+
+read_submission <- function(...) {
+    submission_path <- get_paths()[["submission_path"]]
+    read.csv(submission_path, ...)
+}
+
+write_submission <- function(prediction) {
+    submission_path <- get_paths()[["submission_path"]]
+    valid <- read_valid_pairs()
+    valid <- cbind(valid, prediction)
+    names(valid) <- c("SampleID", "Target")
+    write.csv(valid, row.names = FALSE)
+}
+

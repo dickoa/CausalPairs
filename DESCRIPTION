@@ -1,0 +1,13 @@
+Package: CausalPairs
+Type: Package
+Title: R utilities for the Causality Effect Pairs challenge in Kaggle
+Version: 0.1
+Date: 2013-03-27
+Depends : R (>= 2.15.0), caret, Metrics
+Imports : caret, Metrics
+Author: Dicko Ahmadou
+Maintainer: Dicko Ahmadou <dicko.ahmadou@gmail.com>
+Description: Helper functions for R user in the Causality Effect Pairs competition in Kaggle
+License: GPL
+LazyLoad: yes
+

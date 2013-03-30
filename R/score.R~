@@ -1,0 +1,17 @@
+require(Metrics)
+
+forward_auc <- function(labels, predictions) {
+    target_one <- (labels == 1) * 1.0
+    auc(target_one, predictions)
+}
+
+reverse_auc <- function(labels, predictions) {
+    target_neg_one <- (labels == -1) * 1.0
+    auc(target_one, -predictions)
+}
+
+bidirectional_auc <- function(labels, predictions) {
+    score_forward <- forward_auc(labels, predicitions)
+    score_reverse <- reverse_auc(labels, predicitions)
+    (score_forward + score_reverse) / 2
+}

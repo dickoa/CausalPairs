@@ -1,0 +1,9 @@
+{
+    "train_pairs_path": "./example_data/sample_train_pairs.csv",
+    "train_target_path": "./example_data/sample_train_target.csv",
+    "train_info_path": "/example_data/sample_train_publicinfo.csv",
+    "valid_pairs_path": "example_data/sample_valid_pairs.csv",
+    "valid_info_path": "example_data/sample_valid_publicinfo.csv",
+    "model_path": "Models/basic_python_benchmark.pickle",
+    "submission_path": "Submissions/basic_python_benchmark.csv"
+}
