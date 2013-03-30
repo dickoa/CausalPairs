@@ -11,7 +11,7 @@ clean_data <- function(x)
 ##'
 ##' @export
 ##' @param file
-read_pairs_data <- function(file) {
+read_pairs_data <- function(file) { 
     raw <- fread(file)
     setkey(raw, "SampleID")
     raw[, lapply(.SD, clean_data), by = "SampleID", .SDcols = c("A", "B")]
