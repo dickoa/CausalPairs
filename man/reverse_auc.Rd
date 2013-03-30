@@ -12,7 +12,4 @@
 \description{
   Reverse AUC
 }
-\author{
-  ahmadou
-}
 

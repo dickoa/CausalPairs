@@ -12,7 +12,4 @@
 \description{
   AUC
 }
-\author{
-  ahmadou
-}
 

@@ -10,7 +10,4 @@
 \description{
   Read pairs data given the path
 }
-\author{
-  ahmadou
-}
 

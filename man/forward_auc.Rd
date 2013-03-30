@@ -12,7 +12,4 @@
 \description{
   Forward AUC
 }
-\author{
-  ahmadou
-}
 

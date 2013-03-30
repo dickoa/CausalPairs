@@ -12,7 +12,4 @@
 \description{
   Bidirectional AUC
 }
-\author{
-  ahmadou
-}
 

@@ -2,17 +2,20 @@ Package: CausalPairs
 Type: Package
 Title: R helper functions for the Causality Effect Pairs challenge in Kaggle
 Version: 0.1
-Date: 2013-03-27
-Depends : R (>= 2.15.0), data.table (>= 1.8.8)
-Imports : data.table
-Author: Dicko Ahmadou
-Maintainer: Dicko Ahmadou <dicko.ahmadou@gmail.com>
+Date: 2013-03-30
+Authors@R: c(person("Ahmadou", "Dicko", role = c("aut", "cre"),
+    email = "ahmadou.dicko@gmail.com"))
+Author: Ahmadou Dicko <dicko.ahmadou@gmail.com>
+Maintainer: Ahmadou Dicko <dicko.ahmadou@gmail.com>
 Description: Helper functions for R user to read the data, build classifier and
     compute performance metrics in the Causality Effect Pairs competition in
     Kaggle
-License: GPL
-LazyLoad: yes
+License: GPL (>= 2)
+Depends:
+    data.table (>= 1.8.8)
+LazyData: yes
+ZipData: no
 Collate:
-    'features.R'
     'read_pairs_data.R'
     'score.R'
+    'CausalPairs-package.R'
